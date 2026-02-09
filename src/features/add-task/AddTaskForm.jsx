@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { TaskContext } from "@/entities/todo";
 
 const AddTaskForm = (props) => {
+  console.log("AddTaskForm");
   const { styles } = props;
   const { addTask, newTaskTitle, setNewTaskTitle, newTaskInputRef } =
     useContext(TaskContext);
